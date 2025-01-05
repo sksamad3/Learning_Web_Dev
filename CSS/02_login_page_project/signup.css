@@ -1,22 +1,23 @@
 body {
     height: 100vh;
+    width: 100vw;
     padding: 0;
     margin: 0;
     display: flex;
     justify-content: center;
-    align-items: center;
     background-color: #222121;
 }
 
 .card {
-    width: 30%;
-    height: auto;
+    width: 40%;
+    height: 90%;
     background-color: #3d3c3c;
-    padding: 40px;
+    padding: 10px;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-top: 20px;
 
 }
 
@@ -29,15 +30,36 @@ form {
 }
 
 form>input {
-    margin-bottom: 45px;
-    padding: 14px;
+    padding: 7px;
+    margin-bottom: 25px;
     border-radius: 5px;
     border: none;
     font-size: 1.4em;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    width: 70%;
+    width: 80%;
     cursor: pointer;
 }
+
+.name {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.name>input {
+    display: inline-block;
+    padding: 7px;
+    font-size: 1.4em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 37%;
+    margin-bottom: 25px;
+    margin-right: 20px;
+    border-radius: 5px;
+
+}
+
+
+
 
 h2 {
     text-align: center;
@@ -64,7 +86,8 @@ button:hover {
     background-color: rgb(254, 58, 91);
 }
 
-p>a {
+p>a,
+p {
     color: white;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin-bottom: 30px;
