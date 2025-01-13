@@ -1,0 +1,142 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.font {
+    font-size: 1.2em;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1a1a1a;
+    color: white;
+}
+
+.nav-container {
+    margin-bottom: 40px;
+    background-color: rgb(37, 37, 37);
+    width: 100%;
+
+
+}
+
+.nav1 {
+    padding: 10px;
+    border-bottom: 3px solid white;
+}
+
+.nav1 ul {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+}
+
+.nav1 ul li {
+    padding: 10px;
+}
+
+.nav1 ul li a {
+    text-decoration: none;
+    color: white;
+    /* background-color: orangered; */
+    padding: 5px 15px;
+    position: relative;
+}
+
+.nav1 li {
+    display: inline;
+}
+
+.login-btn {
+    border: none;
+    border-radius: 10px 5px;
+    color: white;
+    padding: 5px 15px;
+    font-size: 1.2em;
+    cursor: pointer;
+    background-color: rgb(223, 41, 71);
+}
+
+.login-btn2 {
+    border: none;
+    /* border-radius: 10px 5px; */
+    color: white;
+    padding: 5px 15px;
+    font-size: 1.2em;
+    cursor: pointer;
+    background-color: rgb(223, 41, 71);
+    width: 80%;
+}
+
+.login-btn:hover,
+.login-btn2:hover {
+    color: white;
+    background-color: rgb(234, 17, 53);
+}
+
+.nav1 a::after {
+    content: " ";
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+}
+
+.nav1 a:hover::after {
+    transform: scaleX(1);
+}
+
+
+/* nav 2  */
+.nav2 {
+    background-color: rgb(0, 0, 0);
+    width: 17%;
+    padding: 0;
+
+}
+
+.nav2 ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.nav2 ul li {
+
+    width: 100%;
+    display: block;
+    margin-bottom: 30px;
+    padding: 10px 5px;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.nav2 ul li a {
+    /* background-color: rgb(171, 44, 44); */
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+    transition: color 0.4s ease
+}
+
+
+.nav2 a:hover {
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+}
