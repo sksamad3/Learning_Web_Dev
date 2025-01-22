@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .flex-container{
+            border: 8px solid rgb(0, 251, 255);
+            background-color: rgb(1, 1, 24);
+            height : 100vh;
+
+
+            display: flex; /*Sets the parent container to flexbox*/
+            /*justify-content have more complex values : space-between , space-around , space-evenly*/
+            justify-content: center; /*justify-content moves the elements in the x-axis (main axis) */
+            align-items: center; /*align-items moves the elements in y-axis (horizontal axis) */
+            flex-wrap: wrap;
+            flex-direction: row;
+            gap: 20px;
+            width: 30%;
+
+            justify-content: center;
+            align-items: flex-center;
+            align-content: space-evenly;
+        }
+
+        #box-1{
+            flex-shrink: 1;
+            flex-grow: 1;
+        }
+
+        .box{
+
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            background-color: rebeccapurple;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 2em;
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <div id="box-1" class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+        <div class="box">6</div>
+        <div class="box">7</div>
+        <div class="box">8</div>
+        <div class="box">9</div>
+    </div>
+</body>
+</html>
